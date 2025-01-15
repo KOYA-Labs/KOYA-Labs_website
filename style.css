@@ -1,0 +1,80 @@
+/* style.css */
+
+/* -----------------------------------
+   1) IMPORT A MONOSPACED FONT
+   ----------------------------------- */
+/* We'll use Roboto Mono (Google Fonts).
+   If you prefer another font or discover
+   the exact one used, swap it here. */
+   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+   /* -----------------------------------
+      2) RESET / BASIC STYLES
+      ----------------------------------- */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   
+   body {
+     /* Dark background close to your screenshot’s look */
+     background-color: #111111; 
+     /* Use a light-gray text color so it’s not stark white */
+     color: #AAAAAA;  
+     font-family: 'Roboto Mono', monospace;
+     font-weight: 300; /* the thinner weight from Roboto Mono */
+     font-size: 1rem;  
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     /* Add a little breathing room */
+     padding: 2rem;
+   }
+   
+   /* -----------------------------------
+      3) LOGO STYLING
+      ----------------------------------- */
+   .logo {
+     /* Keep it from overwhelming smaller screens */
+     max-width: 600px;
+     width: 80%;  /* 80% of parent container, up to max-width */
+     margin: 0 auto 2rem auto; 
+     display: block; 
+   }
+   
+   /* -----------------------------------
+      4) HEADINGS / TEXT STYLES
+      ----------------------------------- */
+   /* This is for your big brand text, if you want the 
+      "KOYA labs" text big. You can also do an <h1> or <h2>. */
+   .brand-name {
+     font-size: 2rem; 
+     margin-bottom: 1rem;
+     color: #FFFFFF;  /* White for contrast */
+   }
+   
+   /* Mission statement (slightly bigger) */
+   .mission {
+     font-size: 1.5rem;
+     color: #D8D8D8; 
+     margin-bottom: 2rem;
+   }
+   
+   /* Vision statement */
+   .vision {
+     font-size: 1.2rem;
+     color: #BEBEBE;
+     margin-bottom: 2rem;
+   }
+   
+   /* Stealth text */
+   .stealth {
+     font-size: 0.9rem;
+     color: #808080; 
+     margin-top: 3rem;
+   }
+   
