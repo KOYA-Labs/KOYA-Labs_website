@@ -4,30 +4,68 @@
   <meta charset="UTF-8" />
   <title>KOYA Labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Link to your external CSS file -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
+  <!-- 1. Import Roboto Mono (Google Fonts) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- 2. Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 3. Optional: A small Tailwind config in <script> if you want 
+       to specify your fonts or colors more cleanly.
+       (For a simple demo, we can inline classes, but for production,
+        consider a full Tailwind build workflow.) 
+  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'roboto-mono': ['"Roboto Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body 
+  class="
+    bg-[#111111] 
+    text-[#AAAAAA] 
+    font-light 
+    font-roboto-mono 
+    text-base 
+    flex 
+    flex-col 
+    items-center 
+    justify-center 
+    min-h-screen 
+    p-8 
+    text-center
+  "
+>
   <!-- LOGO -->
   <img
     src="images/koya-logo.png"
     alt="KOYA Labs Logo"
-    class="logo"
+    class="block mx-auto mb-8 w-[80%] max-w-[600px]"
   />
 
   <!-- Mission -->
-  <div class="mission">
+  <div class="text-[1.2rem] text-[#D8D8D8] mb-8">
     Our mission is to maximize human creativity.
   </div>
 
   <!-- Vision -->
-  <div class="vision">
+  <div class="text-[1.1rem] text-[#BEBEBE] mb-8">
     Our vision is a world where every person can turn their passion into profit.
   </div>
 
   <!-- Stealth Mode -->
-  <div class="stealth">
+  <div class="text-[0.9rem] text-[#808080] mt-12">
     We are currently in stealth mode… soon, you’ll understand why.
   </div>
 
