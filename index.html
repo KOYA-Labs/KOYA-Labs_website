@@ -2,72 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>KOYA Labs</title>
+  <title>KOYA labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 1. Import Roboto Mono (Google Fonts) -->
+  <!-- Roboto Mono (Google Fonts) -->
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap"
     rel="stylesheet"
   />
 
-  <!-- 2. Tailwind CSS (CDN) -->
+  <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- 3. Optional: A small Tailwind config in <script> if you want 
-       to specify your fonts or colors more cleanly.
-       (For a simple demo, we can inline classes, but for production,
-        consider a full Tailwind build workflow.) 
-  -->
+  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            'roboto-mono': ['"Roboto Mono"', 'monospace']
-          }
-        }
-      }
+            'roboto-mono': ['"Roboto Mono"', 'monospace'],
+          },
+        },
+      },
     }
   </script>
 </head>
 <body 
   class="
-    bg-[#111111] 
-    text-[#AAAAAA] 
-    font-light 
-    font-roboto-mono 
-    text-base 
-    flex 
-    flex-col 
-    items-center 
-    justify-center 
-    min-h-screen 
-    p-8 
+    bg-[#111111]
+    text-[#AAAAAA]
+    font-light
+    font-roboto-mono
+    text-base
+    flex
+    flex-col
+    items-center
     text-center
+    min-h-screen
+    pt-16
+    pb-16
+    px-8
   "
 >
-  <!-- LOGO -->
+  <!-- Logo -->
   <img
     src="images/koya-logo.png"
     alt="KOYA Labs Logo"
-    class="block mx-auto mb-8 w-[80%] max-w-[600px]"
+    class="block mx-auto w-[80%] max-w-[600px] mb-8"
   />
 
-  <!-- Mission -->
-  <div class="text-[1.2rem] text-[#D8D8D8] mb-8">
-    Our mission is to maximize human creativity.
-  </div>
-
-  <!-- Vision -->
-  <div class="text-[1.1rem] text-[#BEBEBE] mb-8">
-    Our vision is a world where every person can turn their passion into profit.
+  <!-- Mission/Vision block -->
+  <div class="mb-8">
+    <p class="text-[1.0rem] text-[#D8D8D8] mb-2">
+      Our mission is to maximize human creativity.
+    </p>
+    <p class="text-[1.0rem] text-[#BEBEBE]">
+      Our vision is a world where every person can turn their passion into profit.
+    </p>
   </div>
 
   <!-- Stealth Mode -->
-  <div class="text-[0.9rem] text-[#808080] mt-12">
+  <div class="text-[0.9rem] text-[#808080]">
     We are currently in stealth mode… soon, you’ll understand why.
   </div>
-
 </body>
 </html>
