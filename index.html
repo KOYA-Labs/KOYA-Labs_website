@@ -14,7 +14,7 @@
   <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind Config -->
+  <!-- Tailwind config for Roboto Mono -->
   <script>
     tailwind.config = {
       theme: {
@@ -27,43 +27,46 @@
     }
   </script>
 </head>
+
 <body 
   class="
     bg-[#111111]
     text-[#AAAAAA]
     font-light
     font-roboto-mono
-    text-base
-    flex
-    flex-col
+    flex 
+    flex-col 
+    justify-evenly  /* Spaces items evenly in vertical direction */
     items-center
+    min-h-screen     /* Fills the full browser height */
     text-center
-    min-h-screen
-    pt-16
-    pb-16
-    px-8
+    px-4
   "
 >
-  <!-- Logo -->
+  <!-- 1) LOGO -->
+  <!-- If your logo + text are combined in one image, just use this single image. -->
   <img
     src="images/koya-logo.png"
-    alt="KOYA Labs Logo"
-    class="block mx-auto w-[80%] max-w-[600px] mb-8"
+    alt="KOYA labs"
+    class="
+      w-3/4          /* Fill 75% of the screen width on narrow devices */
+      max-w-[600px]  /* Don’t exceed 600px on wide screens */
+    "
   />
 
-  <!-- Mission/Vision block -->
-  <div class="mb-8">
-    <p class="text-[1.0rem] text-[#D8D8D8] mb-2">
+  <!-- 2) MISSION / VISION BLOCK -->
+  <div>
+    <p class="text-base text-[#D8D8D8] mb-4">
       Our mission is to maximize human creativity.
     </p>
-    <p class="text-[1.0rem] text-[#BEBEBE]">
+    <p class="text-base text-[#BEBEBE]">
       Our vision is a world where every person can turn their passion into profit.
     </p>
   </div>
 
-  <!-- Stealth Mode -->
-  <div class="text-[0.9rem] text-[#808080]">
+  <!-- 3) STEALTH TEXT -->
+  <p class="text-sm text-[#808080]">
     We are currently in stealth mode… soon, you’ll understand why.
-  </div>
+  </p>
 </body>
 </html>
