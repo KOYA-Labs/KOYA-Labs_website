@@ -62,16 +62,33 @@
 
   <!-- 2) MISSION / VISION BLOCK -->
   <div>
-    <p class="text-base text-[#D8D8D8] mb-4">
+    <!-- Use smaller text by default, size up on bigger screens -->
+    <p class="
+      text-sm                /* Default for very small screens */
+      sm:text-base           /* Screens >=640px */
+      md:text-lg             /* Screens >=768px */
+      text-[#D8D8D8]
+      mb-4
+    ">
       Our mission is to maximize human creativity.
     </p>
-    <p class="text-base text-[#BEBEBE]">
+    <p class="
+      text-sm
+      sm:text-base
+      md:text-lg
+      text-[#BEBEBE]
+    ">
       Our vision is a world where every person can turn their passion into profit.
     </p>
   </div>
 
   <!-- 3) STEALTH TEXT -->
-  <p class="text-sm text-[#A1A1A1]">
+  <p class="
+    text-xs               /* Very small default to keep it subtle on mobile */
+    sm:text-sm            /* Bump up on small+ screens */
+    md:text-base          /* Larger on medium+ screens */
+    text-[#A1A1A1]
+  ">
     We are currently in stealth mode… soon, you’ll understand why.
   </p>
 </body>
