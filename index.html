@@ -11,6 +11,8 @@
     rel="stylesheet"
   />
 
+  <!-- All colors used have been checked to comply with WCAG AAA standards at https://webaim.org/resources/contrastchecker/ -->
+
   <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -43,11 +45,15 @@
     px-4
   "
 >
+
+  <!-- Add a screen-reader-only heading for accessibility -->
+  <h1 class="sr-only">KOYA labs</h1>
+
   <!-- 1) LOGO -->
-  <!-- If your logo + text are combined in one image, just use this single image. -->
+  <!-- img tag instead of inline svg such as to safeguard from accessing it directly for changes -->
   <img
-    src="images/koya-logo.png"
-    alt="KOYA labs"
+    src="images/koya-logo.svg"
+    alt="KOYA labs logo with blue mountains and KOYA labs text"
     class="
       w-3/4          /* Fill 75% of the screen width on narrow devices */
       max-w-[600px]  /* Don’t exceed 600px on wide screens */
@@ -65,7 +71,7 @@
   </div>
 
   <!-- 3) STEALTH TEXT -->
-  <p class="text-sm text-[#808080]">
+  <p class="text-sm text-[#A1A1A1]">
     We are currently in stealth mode… soon, you’ll understand why.
   </p>
 </body>
