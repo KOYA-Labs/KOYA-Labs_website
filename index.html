@@ -38,11 +38,12 @@
     font-roboto-mono
     flex 
     flex-col 
-    justify-evenly  /* Spaces items evenly in vertical direction */
     items-center
     min-h-screen     /* Fills the full browser height */
     text-center
     px-4
+    pt-8             /* Top padding */
+    pb-8             /* Bottom padding */
   "
 >
 
@@ -57,11 +58,12 @@
     class="
       w-3/4          /* Fill 75% of the screen width on narrow devices */
       max-w-[600px]  /* Don’t exceed 600px on wide screens */
+      mb-4           /* Gap between logo and mission/vision block */
     "
   />
 
   <!-- 2) MISSION / VISION BLOCK -->
-  <div>
+  <div class="mb-4">  <!-- Gap between mission/vision block and stealth text -->
     <!-- Use smaller text by default, size up on bigger screens -->
     <p class="
       text-xs                /* Default for very small screens */
