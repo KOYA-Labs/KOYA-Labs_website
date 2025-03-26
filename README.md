@@ -64,13 +64,13 @@ For Twilio verification, ensure the verification file is correct.
    ```bash
    git push origin my-feature-branch
 
-7. **Open a Pull Request (PR)**
+6. **Open a Pull Request (PR)**
 
 Go to the GitHub page of your repository fork.
 Click Compare & pull request.
 Provide a clear description of what your changes do, then open the PR
 
-8. **Merge the Pull Request**
+7. **Merge the Pull Request**
 
 Once reviewed and approved, merge the PR into the main branch.
 Your changes will be published to https://www.koyalabs.ai shortly thereafter (GitHub Pages automatically rebuilds).
