@@ -123,4 +123,4 @@ Switch back to main locally, pull the latest changes into main, and optionally d
    ```bash
    git checkout main
    git pull origin main
-   git branch -d my-new-feature
+   git branch -d my-feature-branch
