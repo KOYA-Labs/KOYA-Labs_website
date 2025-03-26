@@ -31,9 +31,9 @@ Below are instructions for cloning the repository, making changes, and pushing u
    ```bash
    git clone https://github.com/KOYA-Labs/KOYA-Labs_website.git
 
-### OPTION A (SIMPLER): Work directly in main branch
+### OPTION A (simpler): Work directly on main branch
 
-**Note: Working directly on the main branch is acceptable for small updates or personal projects. For collaborative projects or significant changes, it is recommended to use feature branches and pull requests to ensure proper review and avoid unintentional disruptions to the live site.**
+**Note: Working directly on the main branch is acceptable for small updates or personal projects. For collaborative projects or significant changes, it is recommended to use feature branches and pull requests (see OPTION B below) to ensure proper review and avoid unintentional disruptions to the live site.**
 
 If you prefer to work directly on the main branch, follow these steps:
 
@@ -49,7 +49,7 @@ If you prefer to work directly on the main branch, follow these steps:
 
 3. **Make your edits**
 
-Edit the files directly on the main branch as needed in your code editor.
+Edit the files directly on the main branch as needed in your code editor:
 - Update index.html as needed.
 - Add or modify files in the images folder if you have new assets.
 - If you need to change the domain, update CNAME.
@@ -61,12 +61,12 @@ Edit the files directly on the main branch as needed in your code editor.
    git add .
    git commit -m "Describe the changes you made"
 
-5. **Push your changes**
+5. **Push your changes to GitHub**
 
    ```bash
    git push origin main
 
-### OPTION B: Work in feature branches
+### OPTION B: Work on feature branches
 
 1. **Ensure you’re on the main branch**
 
@@ -87,13 +87,13 @@ Edit the files directly on the main branch as needed in your code editor.
 
 4. **Make your edits**
 
-Edit the files directly on the main branch as needed in your code editor.
+Edit the files directly on the main branch as needed in your code editor:
 - Update index.html as needed.
 - Add or modify files in the images folder if you have new assets.
 - If you need to change the domain, update CNAME.
 - For Twilio verification, ensure the verification file is correct.
 
-5. **Stage and commit your changes**
+5. **Stage and Commit your changes**
 
    ```bash
    git add .
@@ -107,7 +107,7 @@ Edit the files directly on the main branch as needed in your code editor.
 7. **Open a Pull Request (PR)**
 
 - Go to the GitHub page of your repository fork.
-- Click Compare & pull request.
+- Click "Compare & Pull request".
 - (Optionally provide a clear description of what your changes do.)
 - Open the PR.
 
@@ -118,11 +118,9 @@ Your changes will be published to https://www.koyalabs.ai shortly thereafter (Gi
 
 9. **Clean up**
 
-Switch back to main locally, pull the latest changes into main, and optionally delete the feature branch.
+Switch back to main locally, pull the latest changes into main, and optionally delete the feature branch (via the terminal in your code editor and/or directly on GitHub).
 
    ```bash
    git checkout main
    git pull origin main
    git branch -d my-new-feature
-
-10. **Delete the feature branch in GitHub (optional)**
