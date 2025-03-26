@@ -4,9 +4,6 @@ Welcome to the **KOYA-Labs_website** repository! This repository hosts the sourc
 
 ## Repository Structure
 
-KOYA-Labs_website/ │ ├── images/ │ └── koya-logo.svg │ ├── CNAME │ └── (Contains the custom domain for GitHub Pages: "www.koyalabs.ai") │ ├── fd88876636b744d045b0b81312adec80.html │ └── (Twilio domain verification file) │ └── index.html └── (Main HTML file for the KOYA labs landing page)
-
-
 ### `images/koya-logo.svg`
 - **KOYA labs logo** used on the landing page. 
 - Serves as the primary visual element at the top of the page.
